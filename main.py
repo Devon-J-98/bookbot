@@ -5,14 +5,18 @@ def get_book_text(filepath):
         # f is a file object
         files = f.read()
     return files
-    
+
+def text_from_book():
+    text = get_book_text("books/frankenstein.txt")
+    words = text.split()
+    number_of_words = len(words)
+    return number_of_words
 def main():
-    book_text = get_book_text("books/frankenstein.txt")
-    print (book_text)
+    # book_text = get_book_text("books/frankenstein.txt")
+    value = text_from_book()
+    print (value)
 
 
-def number_of_words(text):
-    text = book_text
     
 
 
